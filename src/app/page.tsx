@@ -15,7 +15,6 @@ import {
   Star,
   Sparkles
 } from "lucide-react";
-import BubbleBackground from "./components/BubbleBackground";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -50,7 +49,6 @@ export default function Home() {
       position: 'relative',
       background: 'linear-gradient(to bottom right, #e6f7ff, #ffffff)'
     }}>
-      <BubbleBackground />
 
       {/* Fixed Navbar */}
       <nav style={{
@@ -97,7 +95,7 @@ export default function Home() {
           {/* Desktop Navigation */}
           <div style={{
             gap: '2rem',
-          }}className="hidden md:flex gap-8">
+          }} className="hidden md:flex gap-8">
             <button
               onClick={() => scrollToSection('home')}
               style={{
@@ -1029,7 +1027,7 @@ export default function Home() {
         </section>
       </main>
 
-     <Footer/>
+      <Footer />
     </div>
   );
 }
