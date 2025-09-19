@@ -18,17 +18,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-base font-semibold mb-3">Quick Links</h4>
-            <ul className="space-y-1 text-sm">
-              <li><Link href="/" className="hover:text-sky-blue">Home</Link></li>
-              <li><Link href="/services" className="hover:text-sky-blue">Services</Link></li>
-              <li><Link href="/about" className="hover:text-sky-blue">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-sky-blue">Contact</Link></li>
-            </ul>
-          </div>
-
           {/* Services */}
           <div>
             <h4 className="text-base font-semibold mb-3">Services</h4>
@@ -43,7 +32,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-base font-semibold mb-3">Contact Us</h4>
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
               <div className="flex items-start">
                 <Phone size={16} className="text-sky-blue mr-2 mt-0.5" />
                 <div>
@@ -60,19 +49,19 @@ export default function Footer() {
               </div>
               <div className="flex items-start">
                 <Mail size={16} className="text-sky-blue mr-2 mt-0.5" />
-                <p>achiengjanet25@gmail.com</p>
+                <p className="break-all">achiengjanet25@gmail.com</p>
               </div>
               <div className="flex items-start">
                 <Mail size={16} className="text-sky-blue mr-2 mt-0.5" />
-                <p>lindaavuvika@gmail.com</p>
+                <p className="break-all">lindaavuvika@gmail.com</p>
               </div>
-              <div className="flex items-start col-span-2">
+              <div className="flex items-start sm:col-span-2">
                 <MapPin size={16} className="text-sky-blue mr-2 mt-0.5" />
                 <p>Nairobi, Kenya</p>
               </div>
             </div>
           </div>
-        </div>
+        </div> {/* ✅ Close grid here */}
 
         {/* Bottom bar */}
         <div className="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-xs">
