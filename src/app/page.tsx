@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import {
   Phone,
   Mail,
-  MapPin,
   Heart,
   Shield,
   Users,
@@ -759,7 +758,7 @@ export default function Home() {
                 margin: '0 auto',
                 ...textStyle,
               }}>
-                We're here to help. Reach out to us for any inquiries or to schedule an appointment.
+                We are here to help. Reach out to us for any inquiries or to schedule an appointment.
               </p>
               <div style={{
                 width: '5rem',
